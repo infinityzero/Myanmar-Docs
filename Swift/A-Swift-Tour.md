@@ -1,4 +1,4 @@
-A Swift Tour
+<h1>A Swift Tour</h1>
 <br>
 ထုံးစံအတိုင်း Language အသစ်တစ်ခုရဲ့ ပထမဆုံး program ဟာ "Hello, world!" စာလုံးကို screen မှာ print ထုတ်တာပါပဲ။ ဒါကို Swift မှာ တစ်ကြောင်းတည်းနဲ့ ဒီလိုရေးလို့ရပါတယ်-
 <pre>
