@@ -1,6 +1,4 @@
 # A Swift Tour
--
-
 ထုံးစံအတိုင်း Language အသစ်တစ်ခုရဲ့ ပထမဆုံး program ဟာ "Hello, world!" စာလုံးကို screen မှာ print ထုတ်တာပါပဲ။ ဒါကို Swift မှာ တစ်ကြောင်းတည်းနဲ့ ဒီလိုရေးလို့ရပါတယ်-
 
 ```swift
@@ -16,8 +14,6 @@ Global scope မှာရေးထားတဲ့ ကုဒ်ဟာ program ရ
 > မှတ်ချက်
 > လေ့လာမှု့အထောက်အကူဖြစ်စေဖို့အတွက် ဒီအခန်းကကုဒ်တွေကို Xcode ရဲ့ playground မှာဖွင့်ပြီးစမ်းကြည့်ပါ။ Playgrounds ဆိုတာကုဒ်တွေကို > ရေးသားနိုင်ပြီး ရေးထားတဲ့ကုဒ်ရဲ့ ရလာဒ်ကို ချက်ခြင်းကြည့်နိုင်ပါတယ်။
 > [Download Playground](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Guided> Tour.html#//apple_ref/doc/uid/TP40014097-CH2-ID1)
-
---
 
 ## ရိုးရိုးတန်ဖိုးများ (Simple Values)
 constant ပြုလုပ်ဖို့အတွက် `let` ကိုသုံးပြီး variable တန်ဖိုးပြုလုပ်ဖို့အတွက် `var` ကို သုံးတယ်။ constant တစ်ခုကို compile time မှာ သိဖို့မလိုပါဘူး။ ဒါပေမယ့် တန်ဖိုးအတိအကျ တစ်ကြိမ် ထည့်(assign)လုပ်ပေးထားဖို့လိုပါမယ်။ ဆိုလိုတာက တစ်ကြိမ် ဆုံးဖြတ်ပြီး အမည်ပေးကြေငြာထားတဲ့ constant တန်ဖိုးတစ်ခုကို နေရာအများအပြားမှာ ပြန်လည်အသုံးပြုနိုင်ပါတယ်။
@@ -102,4 +98,3 @@ empty array သို့ dictionary ကို create လုပ်ဖို့အ
 ```
 
 ## Control Flow
--
