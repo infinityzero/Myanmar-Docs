@@ -98,3 +98,21 @@ empty array သို့ dictionary ကို create လုပ်ဖို့အ
 ```
 
 ## Control Flow
+`if` နဲ့ `switch` ကို condition စစ်ဖို့အတွက်၊ `for-in`, `for`, `while` နဲ့ `do-while` တို့ကို loop ပတ်ဖို့အတွက် သုံးပါတယ်။
+ကွင်းစကွင်းပိတ်ထဲက condition နဲ့ loop variable တွေဟာ optional ပါ။ တွန့်ကွင်း အဖွင့်အပိတ် body ကတော့ လိုပါတယ်။
+
+```swift
+    let individualScores = [75, 43, 103, 87, 12]
+    var teamScore = 0
+    for score in individualScores {
+        if score > 50 {
+            teamScore += 3
+        } else {
+            teamScore += 1
+        }
+    }
+    println(teamScore)
+```
+
+`if` statement ထဲက condition ဟာ Boolean expression ဖြစ်ရပါမယ်။ ဆိုလိုတာက ဒီကုဒ် `if score { ... }` ဟာ error ဖြစ်ပါတယ်။
+ 
