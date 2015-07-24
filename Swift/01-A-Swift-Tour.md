@@ -138,3 +138,23 @@ empty array သို့ dictionary ကို create လုပ်ဖို့အ
 အကယ်၍ optional value က `nil`၊ conditional က `false` ဖြစ်နေတဲ့အခါ တွန့်ကွင်း အဖွင့်အပိတ်တစ်ခုလုံးကို ကျော်သွားပါတယ်။
 ကျန်တာကတော့ `let` နောက်က constant ကို optinal value က unwrap and assign လုပ်သွားပြီး အဲဒီ့ တန်ဖိုးဟာ ကုဒ် block အတွင်း
 မှာရှိနေပါမယ်။
+
+Switch တွေဟာ ဘယ်လိုဒေတာမျိုးမဆို၊ comparison operation များစွာကို support လုပ်ပါတယ်။
+integer တွေတို့ ညီမညီစစ်ဖို့အတွက်တို့ လဲကန့်သတ်ထားတာမရှိပါဘူး။
+
+```swift
+    let vegetable = "red pepper"
+    switch vegetable {
+    case "celery":
+        let vegetableComment = "Add some raisins and make ants on a log."
+    case "cucumber", "watercress":
+        let vegetableComment = "That would make a good tea sandwich."
+    case let x where x.hasSuffix("pepper"):
+        let vegetableComment = "Is it a spicy \(x)?"
+    default:
+        let vegetableComment = "Everything tastes good in soup."
+    }
+```
+
+> စမ်းသပ်ရန်
+> default case ကို ဖြုတ်ပြီးစမ်းကြည့်ပါ။ ဘာ error တတ်ပါသလဲ?
