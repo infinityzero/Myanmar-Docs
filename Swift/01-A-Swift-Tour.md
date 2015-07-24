@@ -116,3 +116,25 @@ empty array သို့ dictionary ကို create လုပ်ဖို့အ
 
 `if` statement ထဲက condition ဟာ Boolean expression ဖြစ်ရပါမယ်။ ဆိုလိုတာက ဒီကုဒ် `if score { ... }` ဟာ error ဖြစ်ပါတယ်။
  
+တန်ဖိုးတွေက missing ဖြစ်နေနိုင်တဲ့အခါမျိုးမှာ `if` နဲ့ `let` ကို အတူတွဲပြီးသုံးနိုင်ပါတယ်။ အဲဒီ့တန်ဖိုးတွေဟာ optionals တွေအဖြစ် ကိုယ်စားပြုပါတယ်။
+တန်ဖိုးတစ်ခုပါတာ သို့မဟုတ်  `nil` ပါဝင်တဲ့ optional တန်ဖိုးဟာ missing တန်ဖိုးတစ်ခုကို ညွှန်ပြတယ်။
+(?) တစ်ခုကို value တစ်ခုရဲ့ type နောက်မှာ ရေးပြီး အဲဒါ့ကို optional value အဖြစ် မှတ်ထားနိုင်ပါတယ်။
+
+```swift
+    var optionalString: String? = "Hello"
+    println(optionalString == nil)
+     
+    var optionalName: String? = "John Appleseed"
+    var greeting = "Hello!"
+    if let name = optionalName {
+        greeting = "Hello, \(name)"
+    }
+``` 
+
+> စမ်းသပ်ရန်
+> `optinalName` ကို `nil` အဖြစ် ပြောင်းကြည့်ပါ။ greeting မှာ ဘာရပါသလဲ? `else` clause ကို ထပ်ထည့်ပြီး 
+> အကယ်၍ `optinalName` က `nil` ဖြစ်တဲ့အခြေအနေမျိုးအတွက် နောက်ထပ် မတူတဲ့ greeting တစ်ခုကို set လုပ်ပါ။
+
+အကယ်၍ optional value က `nil`၊ conditional က `false` ဖြစ်နေတဲ့အခါ တွန့်ကွင်း အဖွင့်အပိတ်တစ်ခုလုံးကို ကျော်သွားပါတယ်။
+ကျန်တာကတော့ `let` နောက်က constant ကို optinal value က unwrap and assign လုပ်သွားပြီး အဲဒီ့ တန်ဖိုးဟာ ကုဒ် block အတွင်း
+မှာရှိနေပါမယ်။
